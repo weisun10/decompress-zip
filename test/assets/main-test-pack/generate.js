@@ -57,9 +57,7 @@ var compress = function (dest, useStore) {
         console.log(err);
     });
     archive.pipe(output);
-    archive.bulk([
-        { expand: true, cwd: extractedDir.path(), src: ['**'] }
-    ]);
+    archive.directory(extractedDir.path(), false);
     archive.finalize();
 };
 

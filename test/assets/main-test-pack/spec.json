@@ -1,23 +1,20 @@
 {
   "name": "extracted",
   "type": "dir",
-  "size": 2098176,
   "children": [
     {
       "name": "dir1",
       "type": "dir",
-      "size": 2098176,
       "children": [
         {
           "name": "dir2",
           "type": "dir",
-          "size": 2098176,
           "children": [
             {
               "name": "0B",
               "type": "file",
               "size": 0,
-              "sha1": null
+              "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
             },
             {
               "name": "1KiB",
@@ -32,18 +29,21 @@
               "sha1": "3394ba403303c0784f836bdb1ee13a4bfd14e6de"
             }
           ],
-          "sha1": "a4e89ec3ee096347221e9823f55b207256cedfcd"
+          "size": 2098176,
+          "sha1": "5bec1494da20b70d783641b53d611cfc4f045709"
         }
       ],
-      "sha1": "8117a33e003049889f6446abf29f813d59e932dd"
+      "size": 2098176,
+      "sha1": "ca0b5b0918b60e25a939b01d8acd91cb19499120"
     },
     {
       "name": "empty",
       "type": "dir",
-      "size": 0,
       "children": [],
-      "sha1": null
+      "size": 0,
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
     }
   ],
-  "sha1": "7ee8998d84b7092c18b07d3853b8103a18a722ae"
+  "size": 2098176,
+  "sha1": "81422ed093de9dbb93b8d740bd147749bf9195f6"
 }

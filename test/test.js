@@ -139,7 +139,7 @@ describe('Extract', function () {
 
     describe('directory creation', function () {
         var tmpDir;
-        var rmdirSync;
+        var rmdirFunc;
         before(function (done) {
             tmp.dir({unsafeCleanup: true}, function (err, dir, cleanupCallback) {
                 if (err) {
@@ -147,7 +147,7 @@ describe('Extract', function () {
                 }
 
                 tmpDir = jetpack.cwd(dir, 'extracted');
-                rmdirSync = cleanupCallback;
+                rmdirFunc = cleanupCallback;
                 done();
             });
         });
@@ -156,13 +156,14 @@ describe('Extract', function () {
             var zip = new DecompressZip(assetsDir.path(samples[0].file));
             zip.on('error', done);
             zip.on('extract', function () {
-                rmdirSync(tmpDir.path());
-                var zip2 = new DecompressZip(assetsDir.path(samples[0].file));
-                zip2.on('error', done);
-                zip2.on('extract', function () {
-                    done();
+                rmdirFunc(() => {
+                    var zip2 = new DecompressZip(assetsDir.path(samples[0].file));
+                    zip2.on('error', done);
+                    zip2.on('extract', function () {
+                        done();
+                    });
+                    zip2.extract({path: tmpDir.path()});
                 });
-                zip2.extract({path: tmpDir.path()});
             });
 
             zip.extract({path: tmpDir.path()});

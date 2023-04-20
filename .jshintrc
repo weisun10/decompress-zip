@@ -9,6 +9,8 @@
         "beforeEach"
     ],
 
+    "esversion": 9,
+
     "indent": 4,
     "node": true,
     "devel": true,

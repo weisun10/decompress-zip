@@ -26,7 +26,7 @@ extractedDir
 
 // Generate spec file to which we can later compare
 // our extracted stuff during tests.
-var spec = mainDir.inspectTree('extracted', { checksum: 'sha1', mode: true });
+var spec = mainDir.inspectTree('extracted', { checksum: 'sha1' });
 mainDir.write('spec.json', spec, { jsonIndent: 2 });
 
 // -------------------------------------------------------
@@ -43,9 +43,7 @@ var compress = function (dest, useStore) {
         console.log(err);
     });
     archive.pipe(output);
-    archive.bulk([
-        { expand: true, cwd: extractedDir.path(), src: ['**'] }
-    ]);
+    archive.directory(extractedDir.path(), false);
     archive.finalize();
 };
 

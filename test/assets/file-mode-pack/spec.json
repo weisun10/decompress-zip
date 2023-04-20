@@ -1,39 +1,34 @@
 {
   "name": "extracted",
   "type": "dir",
-  "mode": 16877,
-  "size": 6,
   "children": [
     {
       "name": "dir1",
       "type": "dir",
-      "mode": 16877,
-      "size": 0,
       "children": [],
-      "sha1": null
+      "size": 0,
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
     },
     {
       "name": "dir2",
       "type": "dir",
-      "mode": 16841,
-      "size": 0,
       "children": [],
-      "sha1": null
+      "size": 0,
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
     },
     {
       "name": "file1",
       "type": "file",
       "size": 3,
-      "sha1": "a9993e364706816aba3e25717850c26c9cd0d89d",
-      "mode": 33261
+      "sha1": "a9993e364706816aba3e25717850c26c9cd0d89d"
     },
     {
       "name": "file2",
       "type": "file",
       "size": 3,
-      "sha1": "66b27417d37e024c46526c2f6d358a754fc552f3",
-      "mode": 33225
+      "sha1": "66b27417d37e024c46526c2f6d358a754fc552f3"
     }
   ],
-  "sha1": "ac6f83cc555959a5817f979deb9e845d4d6962d2"
+  "size": 6,
+  "sha1": "3374685ade6cd415476712d8e7328cd0339eb8b9"
 }
