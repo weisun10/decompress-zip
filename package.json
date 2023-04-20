@@ -7,7 +7,7 @@
     "test": "grunt test"
   },
   "bin": "bin/decompress-zip",
-  "repository": "bower/decompress-zip",
+  "repository": "weisun10/decompress-zip",
   "engines": {
     "node": ">=16.0.0"
   },

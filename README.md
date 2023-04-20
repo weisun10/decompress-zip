@@ -1,4 +1,6 @@
-# decompress-zip [![Build Status](https://travis-ci.org/bower/decompress-zip.svg?branch=master)](https://travis-ci.org/bower/decompress-zip) [![Coverage Status](https://coveralls.io/repos/bower/decompress-zip/badge.png?branch=master)](https://coveralls.io/r/bower/decompress-zip?branch=master)
+# decompress-zip 
+
+**Note** This forked version was verified with Node 16 and 18 LTS.
 
 > Extract files from a ZIP archive
 
